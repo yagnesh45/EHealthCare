@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/text_height"
+        android:textSize="20sp"
+        android:hint="height in CMs"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_weight"
+        android:hint="weight in KGs"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:layout_marginTop="-20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:inputType="number"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_calculate_bmi"
+        android:textSize="20sp"
+        android:text="Calculate BMI"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"
+        style="@style/TextAppearance.MaterialComponents.Button"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_calculated_BMI"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        />
+</LinearLayout>
